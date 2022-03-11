@@ -1,0 +1,3 @@
+interface IStreichelbar {
+    void Streicheln();
+}
