@@ -1,4 +1,4 @@
-class Main {
+class Program {
     public static void main(String[] args) {
         Fisch[] Aquarium = new Fisch[4];
         Goldfisch GF1 = new Goldfisch("Lisa1", "Eichwitz1");
@@ -27,8 +27,8 @@ class Main {
             saeuger.Pflegen();
         }
         Haustier[][] Zoo = new Haustier[][] {Aquarium, Garten};
-        for (Haustier[] haustiers : Zoo) {
-            for (Haustier haustier : haustiers) {
+        for (Haustier[] haustier_array : Zoo) {
+            for (Haustier haustier : haustier_array) {
                 haustier.Pflegen();
             }
         }
@@ -36,10 +36,5 @@ class Main {
         KN2.Fressen("Nahrung2");
         KZ1.Fressen("Nahrung1");
         KZ1.Fressen("Nahrung2");
-
-
-
-
-
     }
 }
